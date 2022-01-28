@@ -1,6 +1,10 @@
 import React from "react";
 import Thumbnail from "../thumbnail/thumbnail.jsx";
 import Card from "../side-byside/side-byside.jsx";
+import Testi from "../testimoni/testimoni.jsx";
+import Emily from '../../images/image-emily.jpg';
+import Jennie from '../../images/image-jennie.jpg';
+import Thomas from '../../images/image-thomas.jpg';
 
 
 const Content = () => {
@@ -36,6 +40,29 @@ const Content = () => {
                         title='Photography'
                         text='Increase your credibility by getting the most stunning, high-quality photos that improve your business image.'
                         />
+                </div>
+            </div>
+            <div className="testi-wrapper py-20">
+                <div className="section-title font-fraunces text-2xl text-center font-bold tracking-widest text-grayish-blue">CLIENT TESTIMONIAL</div>
+                <div className="card-wrapper flex justify-center w-10/12 mx-auto mt-16">
+                <Testi
+                    image={Emily}
+                    testi='We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.'
+                    name='Emily R.'
+                    pos='Marketing Director'
+                    />
+                <Testi
+                    image={Thomas}
+                    testi='Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.'
+                    name='Thomas S.'
+                    pos='Chief Operting Officer'
+                    />
+                <Testi
+                    image={Jennie}
+                    testi='Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!'
+                    name='Jennie F.'
+                    pos='Bussiness Owner'
+                    />  
                 </div>
             </div>
         </div>
