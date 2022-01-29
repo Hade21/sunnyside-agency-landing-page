@@ -10,12 +10,12 @@ const Navbar = () => {
             </div>
             <div className="right text-white flex justify-end">
                 <ul className="font-barlow md:flex justify-end gap-8 items-center hidden">
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Project</li>
-                    <li className="font-fraunces text-sm px-6 py-3 bg-white-pallete text-very-dark-desaturated-blue rounded-full">CONTACT</li>
+                    <li className="menu-text cursor-pointer">About</li>
+                    <li className="menu-text cursor-pointer">Services</li>
+                    <li className="menu-text cursor-pointer">Project</li>
+                    <li className="font-fraunces text-sm px-6 py-3 bg-white-pallete text-very-dark-desaturated-blue rounded-full cursor-pointer" id="contact">CONTACT</li>
                 </ul>
-                <img src={hamburger} alt="hamburger-menu" className="h-fit my-auto md:hidden"/>
+                <img src={hamburger} alt="hamburger-menu" className="h-fit my-auto md:hidden cursor-pointer"/>
             </div>
         </nav>
     )

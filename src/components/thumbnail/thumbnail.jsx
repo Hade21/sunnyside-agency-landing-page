@@ -2,10 +2,10 @@ import React from "react";
 
 const Thumbnail = (props) => {
     return(
-        <div className="container w-full px-24 py-44 text-left">
-            <h1 className="font-fraunces text-5xl mb-10">{props.title}</h1>
+        <div className="container w-full px-8 py-20 text-center lg:px-24 lg:py-40 lg:max-h-screen lg:text-left">
+            <h1 className="font-fraunces text-4xl mb-5 lg:text-5xl lg:mb-10 text-very-dark-desaturated-blue">{props.title}</h1>
             <p className="font-barlow text-base mb-10 text-very-dark-grayish-blue">{props.text}</p>
-            <h4 className="font-fraunces font-bold text-base">LEARN MORE</h4>
+            <h4 className="learn-more font-fraunces font-bold text-base cursor-pointer">LEARN MORE</h4>
         </div>
     )
 }
