@@ -1,12 +1,12 @@
 import React from "react";
-import logo from '../../images/logo.svg';
+import {ReactComponent as Logo} from '../../images/logo.svg';
 import hamburger from '../../images/icon-hamburger.svg';
 
 const Navbar = () => {
     return(
         <nav className="z-10 flex justify-between items-center px-12 py-6 text-sm relative top-0 left-0">
             <div className="left">
-                <img src={logo} alt="logo" />
+                <Logo fill="#FFFFFF" />
             </div>
             <div className="right lg:text-white flex justify-end">
                 <img src={hamburger} alt="hamburger-menu" className="h-fit my-auto md:hidden cursor-pointer peer" tabIndex={0} />
